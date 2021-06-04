@@ -2,31 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <title>Frontend Mentor | Clipboard landing page</title>
+    <title>Template 2</title>
     <link rel="stylesheet" href="estilo.css">
   </head>
   <body>
 
     <header class="header__top">
+      <div class="header__container">                 
+        <picture class="header_top--container">            
+          <source media="(max-width: 760px)" srcset="images/bg-header-mobile.png" type="image/png">
+          <img src="images/bg-header-desktop.png" alt="headerdesktop">                    
+        </picture>  
+      </div>  
       <div>
-        <div><!--
-          <picture>
-            <source class="header__top" media="(max-width: 760px)" srcset="images/bg-header-mobile.png" type="image/png">
-            <img class="header__top" src="images/bg-header-desktop.png" alt="headerdesktop"> 
-          </picture>-->"
-          <h1>A history of everything you copy</h1>
-        </div>
-        <p>
-          Clipboard allows you to track and organize everything you
-          copy. Instantly access your clipboard on all your devices.
-        </p>
-        <div class="menu__button--alinhamento">
-          <button class="menu__button1">Download for iOS</button>
-          <button class="menu__button2">Download for Mac</button>
-        </div>
-      </div>
+        <div class="header__top--logotxt"><img src="images/logo.svg" alt="logo"></div>
+          <h1 class="header__top--logoh1">A history of everything you copy</h1>
+          <p>
+            Clipboard allows you to track and organize everything you
+            copy. Instantly access your clipboard on all your devices.
+          </p>
+      </div>  
+      <div class="menu__button--alinhamento">
+        <button class="menu__button1">Download for iOS</button>
+        <button class="menu__button2">Download for Mac</button>
+      </div>        
+     
     </header>
 
     <main>
@@ -41,19 +43,35 @@
         </h2>
       </div>
       <div>
-        <picture>
-          <source class="imagem__main--computer" media="(max-width: 760px)" srcset="images/image-computer.png" type="image/png">
-          <img class="imagem__main--computer" src="images/image-computer.png" alt="computer"> 
-        </picture>
-          <h3>Quick Search</h3>
-        <p>Easily search your snippets by content, category, web address, application, and more.</p>
-        <h3>iCloud Sync</h3>
-        <p>Instantly saves and syncs snippets across all your devices.</p>
-        <h3>Complete History</h3>
-        <p>Retrieve any snippets from the first moment you started using the app.</p>
+        <table>
+          <tr>
+            <td class="main__table--coluna1">
+              <picture>
+                <source class="imagem__main--computer; main__img" media="(max-width: 760px)" srcset="images/image-computer.png" type="image/png">
+                <img class="imagem__main--computer; main__img" src="images/image-computer.png" alt="computer">
+              </picture>
+            </td>          
+              <td>
+                <div class="main__table--coluna2">
+                  <div>
+                    <h2>Quick Search</h2>
+                    <p style="text-align: left">Easily search your snippets by content, category, web address, application, and more.</p>
+                  </div>
+                  <div>
+                    <h2>iCloud Sync</h2>
+                    <p style="text-align: left">Instantly saves and syncs snippets across all your devices.</p>
+                  </div>
+                  <div>
+                    <h2>Complete History</h2>
+                    <p style="text-align: left">Retrieve any snippets from the first moment you started using the app.</p>
+                  </div>
+                </div>
+              </td>
+          </tr>        
+        </table>
       </div>
       <div>
-        <h2>Access Clipboard anywhere</h2>
+        <h1>Access Clipboard anywhere</h1>
         <p>
           Whether you’re on the go, or at your computer, you can access all your Clipboard
           snippets in a few simple clicks.
@@ -66,20 +84,52 @@
         </picture>
       </div>
       <div>
-        <h2>Supercharge your workflow</h2>
+        <h1>Supercharge your workflow</h1>
         <p>We’ve got the tools to boost your productivity.</p>
-        <img src="images/icon-blacklist.svg" alt="blacklist">
-        <h3>Create blacklists</h3>
-        <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
-        <img src="images/icon-text.svg" alt="text">
-        <h3>Plain text snippets</h3>
-        <p>Remove unwanted formatting from copied text for a consistent look.</p>
-        <img src="images/icon-preview.svg" alt="preview">
-        <h3>Sneak preview</h3>
-        <p>Quick preview of all snippets on your Clipboard for easy access.</p>
-      </div>
+      </div>  
       
-      <div>
+      <section class="main__container--icons">
+        <div class="icons__container--txt">
+            <div class="main__coluna--icon">
+                <div class="main__icon--imgtxt">
+                    <img src="images/icon-blacklist.svg" alt="Blacklist">
+                </div>
+                <div class="main__icons--txt">
+                    <h2>Creabe blacklists</h2>
+                    <p>
+                        Ensure sensitive information never makes its way
+                        to your clipboard buy excluding certain sources.
+                    </p>
+                </div>
+            </div>
+            <div class="main__coluna--icon">
+                <div class="main__icon--imgtxt">
+                    <img src="images/icon-text.svg" alt="text">
+                </div>
+                <div class="main__icons--txt">
+                    <h2>Plain text snippets</h2>
+                    <p>
+                        Remove unwanted formatting from copied text
+                        for a consistent look.
+                    </p>
+                </div>
+            </div>
+            <div class="main__coluna--icon">
+                <div class="main__icon--imgtxt">
+                    <img src="images/icon-preview.svg" alt="preview">
+                </div>
+                <div class="main__icons--txt">
+                    <h2>Sneak preview</h2>
+                    <p>
+                        Quick preview of all snippets on your Clipboard
+                        for easy access.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </section>
+      
+      <div class="main__container--logo">
         <img src="images/logo-google.png" alt="google">
         <img src="images/logo-ibm.png" alt="ibm">
         <img src="images/logo-microsoft.png" alt="microsoft">
@@ -95,29 +145,51 @@
         </p>
       </div>
       <div class="menu__button--alinhamento">
-        <button class="menu__button1">Download for iOS</button>
+        <button class="menu__button1" >Download for iOS</button>
         <button class="menu__button2">Download for Mac</button>
       </div>
     </main>
     
-    <footer>
-    
-      <div>
-        <img src="images/logo.svg" alt="logo">
-        FAQs
-        Contact Us
-        Privacy Policy
-        Press Kit
-        Install Guide
-
-        <img src="images/icon-facebook.svg" alt="facebook">
-        <img src="images/icon-twitter.svg" alt="twitter">
-        <img src="images/icon-instagram.svg" alt="instagram">
-        <p class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-          Coded by <a href="#">Zurc S/A</a>.
-        </p>
-      </div>
-    </footer>
+    <footer class="footer__section">
+      <section>
+          <div class="footer__container">
+              <div class="footer__container--image">
+                  <img src="images/logo.svg" alt="Logo" class="footer__logo--image">
+              </div>
+              <div class="footer__container--links">
+                  <ul class="footer__links--ul">
+                      <li class="footer__link--li"><a href="#" class="footer__link">FAQs</a></li>
+                      <li class="footer__link--li"><a href="#" class="footer__link">Contact Us</a></li>
+                      <li class="footer__link--li"><a href="#" class="footer__link">Privacy Policy</a></li>
+                      <li class="footer__link--li"><a href="#" class="footer__link">Press Kit</a></li>
+                      <li class="footer__link--li"><a href="#" class="footer__link">Install Guide</a></li> 
+                           
+                  </ul>   
+              </div>
+              <div>
+                  <ul class="icon__social--midiaul">
+                      <li class="icon__social--midiali">
+                          <a href="#" class="icon__social--midialink">
+                              <img src="images/icon-instagram.svg" alt="Instagram" class="icon__social--midiaundercover">
+                              <img src="images/icon-instagram-green.svg" alt="Instagram" class="icon__social--midiahover">
+                          </a>
+                      </li>
+                      <li class="icon__social--midiali">
+                          <a href="#" class="icon__social--midialink">
+                              <img src="images/icon-twitter.svg" alt="Twitter" class="icon__social--midiaundercover">
+                              <img src="images/icon-twitter-green.svg" alt="Twitter" class="icon__social--midiahover">
+                          </a>
+                      </li>
+                      <li class="icon__social--midiali">
+                          <a href="#" class="icon__social--midialink">
+                              <img src="images/icon-facebook.svg" alt="Facebook" class="icon__social--midiaundercover">
+                              <img src="images/icon-facebook-green.svg" alt="Facebook" class="icon__social--midiahover">
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </section>
+  </footer>
   </body>
 </html>
